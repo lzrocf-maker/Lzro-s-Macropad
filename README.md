@@ -31,11 +31,13 @@ Based on the custom KiCad PCB schematic:
 The case consists of two 3D-printed parts designed for a secure and clean assembly:
 
 - **Top Plate:** 2mm thick main body (printed in black). It features **three 0.20mm thin sections** (printed in white/translucent) that act as light diffusers for the internal LEDs. It uses **M3 heat-set inserts** in the corners.
-- **Bottom Base:** Features countersunk holes for M3 screws. 
+  <img width="1152" height="708" alt="Captura de pantalla 2026-01-11 231522" src="https://github.com/user-attachments/assets/439fa932-70f4-4c89-bf70-96fb10f4ff93" />
+- **Bottom Base:** Features countersunk holes for M3 screws.
+  <img width="1157" height="741" alt="Captura de pantalla 2026-01-11 231456" src="https://github.com/user-attachments/assets/a09196a4-af7d-45cc-8bd0-67fa40704229" />
 - **Assembly:** The unit is held together by four M3 screws. Two screws pass through integrated mounting holes in the PCB, while the other two provide clamping pressure, securing the board between the top and bottom plates.
   
-<img width="1152" height="708" alt="Captura de pantalla 2026-01-11 231522" src="https://github.com/user-attachments/assets/439fa932-70f4-4c89-bf70-96fb10f4ff93" />
-<img width="1157" height="741" alt="Captura de pantalla 2026-01-11 231456" src="https://github.com/user-attachments/assets/a09196a4-af7d-45cc-8bd0-67fa40704229" />
+
+
 
 ## Firmware
 This project runs **KMK** on **CircuitPython**. 
