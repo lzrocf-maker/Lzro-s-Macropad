@@ -23,12 +23,19 @@ Based on the custom KiCad PCB schematic:
 | **Switches 7-10**| D0, D1, D2, D3 | GPIO0, 1, 2, 3 |
 | **RGB Data** | D4 | GPIO4 |
 
+<img width="1284" height="887" alt="Captura de pantalla 2026-01-11 232509" src="https://github.com/user-attachments/assets/50e428c4-edaf-4ae9-9818-3a3c369ed380" />
+<img width="794" height="577" alt="Captura de pantalla 2026-01-11 232618" src="https://github.com/user-attachments/assets/403f2fb2-2698-4a3f-9c84-dfbea0e64783" />
+<img width="928" height="674" alt="Captura de pantalla 2026-01-11 232704" src="https://github.com/user-attachments/assets/096f7409-d9dc-4fb9-b025-3bdb12b5b1d7" />
+
 ## 3D Enclosure & Assembly
 The case consists of two 3D-printed parts designed for a secure and clean assembly:
 
 - **Top Plate:** 2mm thick main body (printed in black). It features **three 0.20mm thin sections** (printed in white/translucent) that act as light diffusers for the internal LEDs. It uses **M3 heat-set inserts** in the corners.
 - **Bottom Base:** Features countersunk holes for M3 screws. 
 - **Assembly:** The unit is held together by four M3 screws. Two screws pass through integrated mounting holes in the PCB, while the other two provide clamping pressure, securing the board between the top and bottom plates.
+  
+<img width="1152" height="708" alt="Captura de pantalla 2026-01-11 231522" src="https://github.com/user-attachments/assets/439fa932-70f4-4c89-bf70-96fb10f4ff93" />
+<img width="1157" height="741" alt="Captura de pantalla 2026-01-11 231456" src="https://github.com/user-attachments/assets/a09196a4-af7d-45cc-8bd0-67fa40704229" />
 
 ## Firmware
 This project runs **KMK** on **CircuitPython**. 
