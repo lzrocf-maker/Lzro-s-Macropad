@@ -2,8 +2,6 @@
 
 A custom-designed 10-key mechanical macropad with an integrated RGB ring, powered by the **Seeed Studio XIAO RP2040** and **KMK Firmware**.
 
-![Lzro's Macropad Render](./assets/image_4ffce3.png)
-
 ## 🚀 Project Overview
 **Lzro's_Macropad** is a DIY productivity tool designed for efficiency. It features a custom PCB with a direct GPIO mapping (no diodes required) and a semi-translucent 3D-printed enclosure for optimized RGB lighting effects.
 
