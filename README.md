@@ -2,7 +2,7 @@
 
 This is a custom-built macropad for various usecases. The goal is to have different macros for different apps so that when you change app the macros change. It also has a ring with SK6812Mini LEDs. It has 10 mx cherry switches for the macro buttons.
 
-<img width="1161" height="751" alt="Captura de pantalla 2026-01-11 232131" src="https://github.com/user-attachments/assets/fe94f06e-7f76-4ad2-92f7-5a571a116bee" />
+<img width="1088" height="786" alt="image" src="https://github.com/user-attachments/assets/bb041cab-64c3-4939-a4bd-a36dbac12975" />
 
 ## Project Overview
 I have built this macropad so that every switch is directly connected to one GPIO pin on the XIAO RP2040. A feature that will be added some time in the near future is LED reactivity, so that when you click a button, the LEDs make a wave from were the button is located.
