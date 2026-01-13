@@ -1,6 +1,6 @@
 # Lzro's_Macropad
 
-This is a custom-built macropad for various usecases. The goal is to have different macros for different apps so that when you change app the macros change. It also has a ring with SK6812Mini LEDs. It has 10 mx cherry switches for the macro buttons.
+This is a custom-built macropad for various usecases. The goal is to have different macros for different apps so that when you change app the macros change. It also has a ring with SK6812Mini LEDs. It has 10 mx cherry switches for the macro buttons. Here is a photo of how the macropad is suposed to look like when assembled:
 
 <img width="1088" height="786" alt="image" src="https://github.com/user-attachments/assets/bb041cab-64c3-4939-a4bd-a36dbac12975" />
 
