@@ -1,20 +1,20 @@
 # Lzro's_Macropad
 
-A custom-designed 10-key mechanical macropad with an integrated RGB ring, powered by the **Seeed Studio XIAO RP2040** and **KMK Firmware**.
+This is a custom-built macropad for various usecases. The goal is to have different macros for different apps so that when you change app the macros change. It also has a ring with SK6812Mini LEDs. It has 10 mx cherry switches for the macro buttons.
 
 <img width="1161" height="751" alt="Captura de pantalla 2026-01-11 232131" src="https://github.com/user-attachments/assets/fe94f06e-7f76-4ad2-92f7-5a571a116bee" />
 
 ## Project Overview
-**Lzro's_Macropad** is a DIY productivity tool designed for efficiency. It features a custom PCB with a direct GPIO mapping (no diodes required) and a semi-translucent 3D-printed enclosure for optimized RGB lighting effects.
+I have built this macropad so that every switch is directly connected to one GPIO pin on the XIAO RP2040. A feature that will be added some time in the near future is LED reactivity, so that when you click a button, the LEDs make a wave from were the button is located.
 
 ## Hardware Specifications
-- **Microcontroller:** Seeed Studio XIAO RP2040 (RP2040 ARM Cortex M0+).
-- **Switches:** 10x MX-compatible mechanical switches.
-- **Lighting:** 16x addressable RGB LEDs (WS2812B/SK6812) in a ring configuration.
-- **Mounting:** M3 hardware with heat-set inserts for a professional finish.
+- **Microcontroller:** Seeed Studio XIAO RP2040.
+- **Switches:** 10x MX mechanical switches.
+- **Lighting:** 16x addressable RGB LEDs (SK6812 Mini) in three stripes (all connected to one GPIO pin).
+- **Mounting:** M3 hardware with heat-set inserts with a 3d printed case printed in to halves.
 
 ## Pinout Reference
-Based on the custom KiCad PCB schematic:
+These are the pinouts of the XIAO board to all the components:
 
 | Component | XIAO Pin | GPIO |
 | :--- | :--- | :--- |
@@ -28,27 +28,21 @@ Based on the custom KiCad PCB schematic:
 <img width="928" height="674" alt="Captura de pantalla 2026-01-11 232704" src="https://github.com/user-attachments/assets/096f7409-d9dc-4fb9-b025-3bdb12b5b1d7" />
 
 ## 3D Enclosure & Assembly
-The case consists of two 3D-printed parts designed for a secure and clean assembly:
+I designed the case so that you only have to print 2 parts, the two halves come together with 4 M3 screws and heat-set inserts:
 
-- **Top Plate:** 2mm thick main body (printed in black). It features **three 0.20mm thin sections** (printed in white/translucent) that act as light diffusers for the internal LEDs. It uses **M3 heat-set inserts** in the corners.
+- **Top Plate:** I designed the top part with the cutouts for the 10 switches as well as a cutout to see the controller and a bit of the PCB, I also added 3 0.20mm thick stripes as diffusers for the LED lights (wich can be printed in white while the rest of the body is printed in black. If you don't have a multicolor 3d printer you can print the entire to part in white, although there will be light bleed.
   <img width="1152" height="708" alt="Captura de pantalla 2026-01-11 231522" src="https://github.com/user-attachments/assets/439fa932-70f4-4c89-bf70-96fb10f4ff93" />
-- **Bottom Base:** Features countersunk holes for M3 screws.
+- **Bottom Base:** The bottom part features a recesed part so that the pins of the switches do not crash onto the case. It also has 4 countersunc holes for the 4 M3 screws. Some anti-slip pads can be added beside the holes for better grip on the desk, although it is not needed for it to function.
   <img width="1157" height="741" alt="Captura de pantalla 2026-01-11 231456" src="https://github.com/user-attachments/assets/a09196a4-af7d-45cc-8bd0-67fa40704229" />
-- **Assembly:** The unit is held together by four M3 screws. Two screws pass through integrated mounting holes in the PCB, while the other two provide clamping pressure, securing the board between the top and bottom plates.
   
 
-
-
 ## Firmware
-This project runs **KMK** on **CircuitPython**. 
-
-**Main advantages:**
-- No complex build environment needed.
-- Instant keymap customization by editing `code.py`.
-- Native support for the RP2040's features.
+This project runs **KMK** on **CircuitPython**.
 
 ## Repository Contents
-- **/hardware**: KiCad PCB design files (`.kicad_pcb`, `.kicad_sch`) and manufacturing Gerbers.
-- **/firmware**: `code.py` configuration and KMK library setup.
-- **/3d_models**: STL files for the Top Plate and Bottom Base.
-- **/assets**: Renders (including `image_4ffce3.png`) and schematic screenshots.
+- The files ended on .kicad_sch/pro/pcb are the PCB files.
+- The Gerbers.zip contains the files for PCB manufacturing.
+- The files with the name screenshot contain photos of the product.
+- The file code.py contains the core firmware for the pcb to work (it can be changed to your specific needs).
+- Lzro's_Macropad.step contains the 3d model of the macropad.
+- The BOM file contains all the list of materials needed for manufacturing this project.
